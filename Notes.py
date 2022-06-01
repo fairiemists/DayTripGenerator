@@ -13,6 +13,9 @@ print()
 # Order of questions = Destination/transportation/entertainment/restaurant
 
 
+
+# 1:1 Meeting
+
 destinations = ["San Juan Islands", "Leavenworth", "Bellingham", "Gig Harbor", "Walla Walla"]
 
 def select_destination():
