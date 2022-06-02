@@ -9,7 +9,7 @@ print()
 
 entertainments = ['on a wine, beer, or liquor tour', 'shopping', 'museum or gallery viewing', 'to a concert', 'sightseeing', 'hiking']
 destinations = ["San Juan Islands", "Leavenworth", "Bellingham", "Gig Harbor", "Walla Walla"]
-restaurants = ["Denny's", "Shari's", "Old Country Buffet", "Olive Garden", "Teriyaki", "Steakhouse"]
+restaurants = ["Denny's", "Shari's", "Old Country Buffet", "Olive Garden", "a teriyaki", "a steakhouse"]
 transportations = ["car", "motorcycle", "rollerskates", "horseback", "bicycle"]
 
 
@@ -69,17 +69,23 @@ def choose_transportation():
 
 
 def run_planner():
+    print()
     selected_entertainment = choose_entertainment()
+    print()
     selected_destination = choose_destination(selected_entertainment)
+    print()
     selected_restaurant = choose_restaurant()
+    print()
     selected_transportation = choose_transportation()
+    print()
     confirm_plan(selected_entertainment, selected_destination, selected_restaurant, selected_transportation)
-    
 
 
 def confirm_plan(selected_entertainment, selected_destination, selected_restaurant, selected_transportation):
+    print()
     print(f"Let's see here. For your daytrip you have chosen to go {selected_entertainment} in {selected_destination} then dining at {selected_restaurant} restaurant. ")
     print(f"You'll also be getting around by {selected_transportation} throughout the day. This sounds like fun! ")
+    print()
 
     user_input = ()
     while user_input != "y":
